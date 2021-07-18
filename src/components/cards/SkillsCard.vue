@@ -8,12 +8,13 @@
       bg-yellow-300
       py-2
       scroll-y
+      items-start
     "
   >
     <div class="w-custom flex-shrink-0 child-snap">
       <SkillsSubCard :items="programming" />
     </div>
-    <div class="w-custom h-full flex-shrink-0 child-snap">
+    <div class="w-custom flex-shrink-0 child-snap">
       <SkillsSubCard :items="langs" />
     </div>
     <div class="w-custom flex-shrink-0 child-snap last">

@@ -30,38 +30,8 @@
       <NameLvl />
       <SkillsCard />
 
-      <div
-        class="relative self-center my-2"
-        @mouseover="tooltipShow"
-        @touchstart.prevent="tooltipShow"
-        @mouseleave="tooltipHide"
-        @touchend.prevent="tooltipHide"
-        @touchcancel="tooltipHide"
-      >
+      <div class="relative self-center my-2">
         <ScrollIcon />
-        <div
-          class="
-            flex
-            justify-center
-            items-center
-            bg-gray-900
-            text-sm text-yellow-300
-            font-medium
-            tracking-wide
-            w-32
-            py-1
-            absolute
-            rounded-bl-lg rounded-r-lg
-            left-6
-            xs:left-12
-            top-0
-            scroll
-            shadow
-          "
-          :class="{ hidden: tooltip_hidden }"
-        >
-          {{ $t("try_scrolling") }}
-        </div>
       </div>
 
       <h2 class="font-semibold text-lg mt-1 mb-2 text-gray-900">
@@ -131,6 +101,7 @@ export default {
       { name: "laravel", type: "back" },
       { name: "node", type: "back" },
       { name: "express", type: "back" },
+      { name: "django", type: "back" },
       { name: "docker", type: "back" },
       { name: "postgres", type: "data" },
       { name: "mysql", type: "data" },
@@ -146,19 +117,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-@keyframes scroll {
-  from {
-    transform: translateX(-100vh);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-
-.scroll {
-  animation-name: scroll;
-  animation-duration: 0.5s;
-}
-</style>

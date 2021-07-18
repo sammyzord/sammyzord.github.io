@@ -15,7 +15,7 @@
     >
       <h2
         class="
-          text-lg
+          xs:text-lg
           sm:text-xl
           font-bold
           text-yellow-300
@@ -26,15 +26,7 @@
         {{ $t(items.name) }}
       </h2>
     </div>
-    <div
-      class="
-        w-full
-        grid grid-flow-row grid-cols-1
-        sm:grid-cols-2
-        p-2
-        gap-y-2 gap-x-8
-      "
-    >
+    <div class="w-full grid grid-cols-1 sm:grid-cols-2 p-2 gap-y-2 gap-x-8">
       <ProgressBar
         v-for="item in items.items"
         :key="item.name"
