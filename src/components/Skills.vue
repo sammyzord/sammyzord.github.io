@@ -30,10 +30,6 @@
       <NameLvl />
       <SkillsCard />
 
-      <div class="relative self-center my-2">
-        <ScrollIcon />
-      </div>
-
       <h2 class="font-semibold text-lg mt-1 mb-2 text-gray-900">
         Other Skills:
       </h2>
@@ -79,7 +75,6 @@ import NameLvl from "./cards/NameLvl.vue";
 import SkillsCard from "./cards/SkillsCard.vue";
 import LabelTag from "./cards/LabelTag.vue";
 import SkillsText from "./texts/SkillsText.vue";
-import ScrollIcon from "./icons/ScrollIcon.vue";
 
 export default {
   name: "Skills",
@@ -88,7 +83,6 @@ export default {
     SkillsCard,
     LabelTag,
     SkillsText,
-    ScrollIcon,
   },
   data: () => ({
     tooltip_hidden: true,

@@ -91,13 +91,13 @@
       >
         <div
           class="dot bg-yellow-300 p-1 w-2 h-2 rounded-full animate-bounce"
-        ></div>
+        />
         <div
           class="dot bg-yellow-300 p-1 w-2 h-2 rounded-full animate-bounce"
-        ></div>
+        />
         <div
           class="dot bg-yellow-300 p-1 w-2 h-2 rounded-full animate-bounce"
-        ></div>
+        />
       </div>
       <span v-else>{{ $t("send") }}</span>
     </button>

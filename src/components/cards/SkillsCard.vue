@@ -1,5 +1,7 @@
 <template>
   <div
+    id="carrousel"
+    ref="carrousel"
     class="
       flex
       overflow-x-scroll
@@ -10,6 +12,7 @@
       scroll-y
       items-start
     "
+    @scroll="handleScroll"
   >
     <div class="w-custom flex-shrink-0 child-snap">
       <SkillsSubCard :items="programming" />
@@ -21,6 +24,44 @@
       <SkillsSubCard :items="design" />
     </div>
   </div>
+  <div class="flex justify-center space-x-2">
+    <div
+      class="
+        dot
+        bg-gray-900
+        p-2
+        rounded-full
+        transition
+        duration-300
+        ease-in-out
+      "
+      :class="{ 'transform -translate-y-2': slideNo === 0 }"
+    />
+    <div
+      class="
+        dot
+        bg-gray-900
+        p-2
+        rounded-full
+        transition
+        duration-300
+        ease-in-out
+      "
+      :class="{ 'transform -translate-y-2': slideNo === 1 }"
+    />
+    <div
+      class="
+        dot
+        bg-gray-900
+        p-2
+        rounded-full
+        transition
+        duration-300
+        ease-in-out
+      "
+      :class="{ 'transform -translate-y-2': slideNo == 2 }"
+    />
+  </div>
 </template>
 
 <script>
@@ -28,7 +69,10 @@ import SkillsSubCard from "./SkillsSubCard.vue";
 
 export default {
   name: "SkillsCard",
+  components: { SkillsSubCard },
   data: () => ({
+    width: 0,
+    position: 0,
     design: {
       name: "Design",
       items: [
@@ -55,7 +99,23 @@ export default {
       ],
     },
   }),
-  components: { SkillsSubCard },
+  computed: {
+    slideNo() {
+      return Math.round(this.position / this.width);
+    },
+  },
+  methods: {
+    handleScroll() {
+      this.position = document.getElementById("carrousel").scrollLeft;
+    },
+    getNewWidth() {
+      this.width = this.$refs.carrousel.clientWidth;
+    },
+  },
+  mounted() {
+    window.addEventListener("resize", this.getNewWidth);
+    this.width = this.$refs.carrousel.clientWidth;
+  },
 };
 </script>
 
@@ -65,7 +125,7 @@ export default {
 }
 
 .last {
-  margin-right: 2%;
+  margin-right: 1%;
 }
 .scroll-y {
   cursor: ew-resize;
