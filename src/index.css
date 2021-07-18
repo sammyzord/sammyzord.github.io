@@ -1,3 +1,5 @@
+@import "./assets/styles/topography.css";
+@import "./assets/styles/topography_dark.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

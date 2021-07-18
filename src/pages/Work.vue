@@ -1,6 +1,14 @@
 <template>
   <section
-    class="flex justify-center items-center min-h-screen px-10 py-20 topography"
+    class="
+      flex
+      justify-center
+      items-center
+      min-h-screen
+      px-10
+      py-20
+      topography-dark
+    "
   >
     <div class="flex flex-wrap justify-center md:justify-between">
       <JobCard
@@ -23,7 +31,3 @@ export default {
   components: { JobCard },
 };
 </script>
-
-<style scoped>
-@import "../assets/styles/topography_dark.css";
-</style>
