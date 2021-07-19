@@ -71,9 +71,11 @@
         fixed
         bg-yellow-300
         border-2 border-gray-900
-        px-4
         py-3
+        pr-4
+        pl-10
         bottom-10
+        rounded-l-full
         sm:left-10
         bring-forward
         z-40
