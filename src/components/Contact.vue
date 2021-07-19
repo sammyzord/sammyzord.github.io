@@ -73,10 +73,10 @@
         border-2 border-gray-900
         py-3
         pr-4
-        pl-10
+        pl-4
+        sm:pl-10
         bottom-10
-        rounded-l-full
-        sm:left-10
+        sm:rounded-l-full sm:left-10
         bring-forward
         z-40
         text-gray-900
@@ -102,7 +102,7 @@ export default {
   name: "Contact",
   components: { ContactForm, ContactText, FollowCard, QRCodeCard },
   data: () => ({
-    show_alert: false,
+    show_alert: true,
   }),
   methods: {
     showAlert() {
