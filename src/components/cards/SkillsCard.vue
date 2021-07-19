@@ -1,7 +1,6 @@
 <template>
   <div
     id="carrousel"
-    ref="carrousel"
     class="
       flex
       overflow-x-scroll
@@ -35,7 +34,7 @@
         duration-300
         ease-in-out
       "
-      :class="{ 'transform -translate-y-2': slideNo === 0 }"
+      :class="{ 'transform -translate-y-1': slideNo === 0 }"
     />
     <div
       class="
@@ -47,7 +46,7 @@
         duration-300
         ease-in-out
       "
-      :class="{ 'transform -translate-y-2': slideNo === 1 }"
+      :class="{ 'transform -translate-y-1': slideNo === 1 }"
     />
     <div
       class="
@@ -59,7 +58,7 @@
         duration-300
         ease-in-out
       "
-      :class="{ 'transform -translate-y-2': slideNo == 2 }"
+      :class="{ 'transform -translate-y-1': slideNo === 2 }"
     />
   </div>
 </template>
@@ -101,20 +100,14 @@ export default {
   }),
   computed: {
     slideNo() {
-      return Math.round(this.position / this.width);
+      return Math.round(this.position / this.width) || 0;
     },
   },
   methods: {
     handleScroll() {
       this.position = document.getElementById("carrousel").scrollLeft;
+      this.width = document.getElementById("carrousel").clientWidth;
     },
-    getNewWidth() {
-      this.width = this.$refs.carrousel.clientWidth;
-    },
-  },
-  mounted() {
-    window.addEventListener("resize", this.getNewWidth);
-    this.width = this.$refs.carrousel.clientWidth;
   },
 };
 </script>

@@ -147,7 +147,7 @@ export default {
 <style scoped>
 .button:disabled {
   opacity: 0.7;
-  cursor: not-allowed;
+  cursor: default;
 }
 button.loading {
   cursor: wait !important;
