@@ -102,7 +102,7 @@ export default {
   name: "Contact",
   components: { ContactForm, ContactText, FollowCard, QRCodeCard },
   data: () => ({
-    show_alert: true,
+    show_alert: false,
   }),
   methods: {
     showAlert() {
