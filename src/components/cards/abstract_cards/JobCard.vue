@@ -36,7 +36,7 @@
       <span class="font-semibold">{{ type }}</span>
     </div>
     <div class="border-2 p-4 border-yellow-300 bg-gray-900">
-      <div class="flex flex-col w-56 xs:w-72 space-y-2">
+      <div class="flex flex-col w-56 xs:w-72 xl:w-80 space-y-2">
         <h2
           class="text-lg sm:text-2xl xl:text-3xl font-semibold text-yellow-300"
         >
@@ -46,7 +46,9 @@
           <h3 class="sm:text-xl xl:text-2xl text-yellow-300">
             {{ subtitle }}
           </h3>
-          <h3 class="text-xs xs:text-sm text-yellow-300 self-end">
+          <h3
+            class="text-xs xs:text-sm text-yellow-300 self-end tracking-tight"
+          >
             {{ time }}
           </h3>
         </div>

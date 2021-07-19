@@ -18,7 +18,7 @@ const router = createRouter({
       path: "/trabalho",
       component: Work,
     },
-    { path: "/:pathMatch(.*)*", component: About },
+    { path: "/:pathMatch(.*)*", redirect: "/" },
   ],
 });
 

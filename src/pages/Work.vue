@@ -17,7 +17,7 @@
         :type="$t('job')"
         :source="'Closed Source'"
         :description="$t('merlion_description')"
-        :time="'2019 ~ 2021'"
+        :time="'Jan 2019 ~ Feb 2021'"
       />
     </div>
   </section>
