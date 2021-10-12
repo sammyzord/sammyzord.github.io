@@ -19,6 +19,14 @@
         :description="$t('merlion_description')"
         :time="'Jan 2019 ~ Feb 2021'"
       />
+      <JobCard
+        :title="$t('lift')"
+        :subtitle="$t('jr_developer')"
+        :type="$t('project')"
+        :source="'Closed Source'"
+        :description="$t('lift_mb_description')"
+        :time="'Jun 2021 ~ Oct 2021'"
+      />
     </div>
   </section>
 </template>

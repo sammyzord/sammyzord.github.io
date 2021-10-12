@@ -2,17 +2,18 @@
   <section
     class="
       flex flex-col
-      py-4
-      sm:py-0 sm:px-8
+      py-6
+      sm:px-8
       lg:px-20
       xl:px-28
       justify-around
       bg-gray-900
       min-h-screen
       items-center
-      sm:items-start
+      md:items-start
       space-y-20
-      sm:space-y-0
+      sm:space-y-10
+      md:space-y-2
     "
   >
     <div

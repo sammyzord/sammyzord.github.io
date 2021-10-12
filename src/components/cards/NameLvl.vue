@@ -14,8 +14,7 @@
         transform
         translate-y-6 translate-x-2.5
         -rotate-6
-        hover:rotate-0
-        hover:translate-y-7
+        hover:rotate-0 hover:translate-y-7
         text-gray-900
         shadow
       "
@@ -59,8 +58,7 @@
               transform
               -rotate-6
               -translate-y-1
-              hover:rotate-0
-              hover:-translate-y-0.5
+              hover:rotate-0 hover:-translate-y-0.5
               text-gray-900
               shadow
             "
@@ -86,8 +84,7 @@
               transform
               -rotate-6
               -translate-y-1
-              hover:rotate-0
-              hover:-translate-y-0.5
+              hover:rotate-0 hover:-translate-y-0.5
               text-gray-900
               shadow
             "
@@ -101,9 +98,12 @@
 </template>
 
 <script>
-import { differenceInYears } from "date-fns";
-import { differenceInDays } from "date-fns";
-import { getYear } from "date-fns";
+import {
+  differenceInYears,
+  differenceInDays,
+  getYear,
+  addYears,
+} from "date-fns";
 
 export default {
   name: "NameLvl",
@@ -113,7 +113,13 @@ export default {
     },
     daysToBirthday() {
       const currentYear = getYear(new Date());
-      return differenceInDays(new Date(currentYear, 8, 20), new Date());
+      const daysTo = differenceInDays(new Date(currentYear, 8, 20), new Date());
+      if (daysTo >= 0) {
+        return daysTo;
+      } else {
+        const nextYear = getYear(addYears(new Date(), 1));
+        return differenceInDays(new Date(nextYear, 8, 20), new Date());
+      }
     },
   },
 };

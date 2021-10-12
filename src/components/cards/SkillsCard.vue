@@ -91,7 +91,7 @@ export default {
       items: [
         { name: "Javascript / ES6", amount: 90 },
         { name: "Typescript", amount: 85 },
-        { name: "Python", amount: 80 },
+        { name: "Python", amount: 85 },
         { name: "PHP", amount: 85 },
         { name: "Go", amount: 40 },
         { name: "Ruby", amount: 35 },
