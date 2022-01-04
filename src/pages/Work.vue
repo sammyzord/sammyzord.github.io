@@ -1,14 +1,6 @@
 <template>
   <section
-    class="
-      flex
-      justify-center
-      items-center
-      min-h-screen
-      px-10
-      py-20
-      topography-dark
-    "
+    class="flex justify-center items-center min-h-screen px-10 py-20 topography-dark"
   >
     <div class="flex flex-wrap justify-center md:justify-between">
       <JobCard
@@ -25,7 +17,15 @@
         :type="$t('project')"
         :source="'Closed Source'"
         :description="$t('lift_mb_description')"
-        :time="'Jun 2021 ~ Oct 2021'"
+        :time="'May 2021 ~ Oct 2021'"
+      />
+      <JobCard
+        :title="$t('flux')"
+        :subtitle="$t('fullstack_developer')"
+        :type="$t('job')"
+        :source="'Closed Source'"
+        :description="$t('flux_description')"
+        :time="'Aug 2021 ~ Ongoing'"
       />
     </div>
   </section>

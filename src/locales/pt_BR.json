@@ -35,7 +35,10 @@
   "project": "Projeto",
   "merlion": "Merlion TI",
   "jr_developer": "Desenvolvedor Jr.",
+  "fullstack_developer": "Fullstack%Developer",
   "merlion_description": "Desenvolvimento de Aplicações Web e APIs RESTful em :Laravel PHP:%Teste de aplicações com :PHPUnit:%Desenvolvimento de Single-Page Applications em :Vue.js:%Projeto de Bancos de Dados em :PostgreSQL: e :MySQL:%:Dockerização: dos ambientes de desenvolvimento",
   "lift": "LIFT Learning",
-  "lift_mb_description": "Projeto independente desenvolvido para a :Mercado Bitcoin:%Desenvolvimento de uma API RESTful em :Express:%Design de Schemas em :MongoDB:%Consumo de dados do :Blockchain Ethereum: usando :Web3.js:"
+  "lift_mb_description": "Projeto independente desenvolvido para a :Mercado Bitcoin:%Desenvolvimento de uma API RESTful em :Express:%Design de Schemas em :MongoDB:%Consumo de dados do :Blockchain Ethereum: usando :Web3.js:",
+  "flux": "Flux",
+  "flux_description": "Manutenção de um projeto backend feito em :Django:%Desenvolvimento de um frontend SPA em :Vue.js: e :TailwindCSS:"
 }
