@@ -6,6 +6,7 @@ import LinkedinIcon from "./icons/LinkedinIcon.vue";
 
 <template>
   <div class="flex flex-col md:flex-row gap-1 m-2">
+    <div class="w-20"></div>
     <div
       class="bg-yellow-300 text-gray-900 border-2 border-gray-900 flex flex-col items-center space-y-4 p-4 shadow-lg"
     >
