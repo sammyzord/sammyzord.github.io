@@ -23,3 +23,8 @@ export const liftDetails = [
     'Designed and set up a :CI: pipeline in :GitHub Actions:',
     'Deployed production containers using :Heroku:',
 ]
+
+export const zooDetails = [
+    'Maintained and evolved a frontend project made in :Next.js:',
+    'Assisted in the :DevOps: process of applications in :Azure:'
+]

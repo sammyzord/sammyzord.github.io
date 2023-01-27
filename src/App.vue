@@ -2,6 +2,7 @@
 import HeroSection from "./components/HeroSection.vue";
 import JobSection from "./components/JobSection.vue";
 import ArrowDownIcon from "./components/icons/ArrowDownIcon.vue";
+import ClockIcon from "./components/icons/ClockIcon.vue";
 </script>
 
 <template>
@@ -26,7 +27,17 @@ import ArrowDownIcon from "./components/icons/ArrowDownIcon.vue";
         </div>
       </div>
       <JobSection></JobSection>
-      <div class="py-10"></div>
+      <div
+        class="bg-yellow-300 px-2 py-1 mb-4 mr-3 self-end rounded-lg hover:scale-105 transition ease-in-out"
+      >
+        <h2
+          class="flex items-center space-x-2 text-md font-semibold text-gray-900"
+        >
+          <ClockIcon></ClockIcon>
+          <span> Total experience: </span>
+          <span> 4 Years </span>
+        </h2>
+      </div>
     </div>
   </div>
 </template>

@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import JobCard from "./JobCard.vue";
-import { merlionDetails, fluxDetails, liftDetails } from "../utils/data";
+import {
+  merlionDetails,
+  fluxDetails,
+  liftDetails,
+  zooDetails,
+} from "../utils/data";
 </script>
 
 <template>
@@ -29,6 +34,13 @@ import { merlionDetails, fluxDetails, liftDetails } from "../utils/data";
         :periods="[['Jul 2021', 'Oct 2022']]"
         :details="fluxDetails"
         :location="'Brasília, Brazil'"
+      ></JobCard>
+      <JobCard
+        :name="'ZooStation'"
+        :title="'Frontend Developer'"
+        :periods="[['Oct 2022', 'Ongoing']]"
+        :details="zooDetails"
+        :location="'The Hague, Netherlands'"
       ></JobCard>
     </div>
   </div>
