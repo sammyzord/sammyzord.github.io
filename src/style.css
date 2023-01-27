@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Fira Sans";
+    font-weight: 400;
+    src: url("./assets/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Crimson Pro";
+    font-weight: 500;
+    src: url("./assets/Crimson_Pro/CrimsonPro-Medium.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Crimson Pro";
+    font-weight: 700;
+    src: url("./assets/Crimson_Pro/CrimsonPro-Bold.ttf") format("truetype");
+  }
+}

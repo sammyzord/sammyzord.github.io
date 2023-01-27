@@ -20,9 +20,9 @@ import ArrowDownIcon from "./components/icons/ArrowDownIcon.vue";
     <div class="min-h-screen flex flex-col justify-between items-center">
       <div class="self-start pt-6 pb-10 pt-10 pl-4">
         <div
-          class="bg-gray-800 border-2 border-yellow-300 text-yellow-300 py-1 px-4 -rotate-12"
+          class="bg-gray-800 border-2 border-yellow-300 text-yellow-300 py-1 px-4 -rotate-12 hover:rotate-0 hover:-translate-y-2 transition ease-in-out"
         >
-          <h1 class="text-2xl font-semibold">Work experience</h1>
+          <h1 class="text-3xl font-bold font-serif">Work experience</h1>
         </div>
       </div>
       <JobSection></JobSection>

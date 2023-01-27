@@ -16,8 +16,8 @@ import LinkedinIcon from "./icons/LinkedinIcon.vue";
         class="max-h-80 rounded-full border-2 border-gray-900"
       />
       <div class="flex flex-col items-end gap-1 text-right">
-        <div class="text-2xl md:text-4xl font-semibold">Samuel Borges</div>
-        <div>Software Engineer</div>
+        <div class="text-4xl md:text-5xl font-bold font-serif">Samuel Borges</div>
+        <div class="text-xl font-medium">Software Engineer</div>
       </div>
     </div>
     <div class="flex flex-row md:flex-col justify-end gap-4 items-start">
