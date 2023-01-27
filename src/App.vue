@@ -18,11 +18,15 @@ import ArrowDownIcon from "./components/icons/ArrowDownIcon.vue";
       </div>
     </div>
     <div class="min-h-screen flex flex-col justify-between items-center">
-      <div class="bg-gray-900 border-2 border-yellow-300 text-yellow-300 self-start mt-7 ml-3 py-1 px-4 -rotate-12">
-        <h1 class="text-2xl font-semibold">Work experience</h1>
+      <div class="self-start pt-10 pl-4">
+        <div
+          class="bg-gray-800 border-2 border-yellow-300 text-yellow-300 py-1 px-4 -rotate-12"
+        >
+          <h1 class="text-2xl font-semibold">Work experience</h1>
+        </div>
       </div>
       <JobSection></JobSection>
-      <div class="mb-8"></div>
+      <div></div>
     </div>
   </div>
 </template>
