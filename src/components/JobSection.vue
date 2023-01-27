@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import JobCard from "./JobCard.vue";
-
 import { merlionDetails, fluxDetails, liftDetails } from "../utils/data";
 </script>
 
@@ -12,6 +11,7 @@ import { merlionDetails, fluxDetails, liftDetails } from "../utils/data";
         :title="'Fullstack Developer'"
         :periods="[['Jan 2019', 'Feb 2021']]"
         :details="merlionDetails"
+        :location="'Brasília, Brazil'"
       ></JobCard>
       <JobCard
         :name="'LIFT Learning'"
@@ -21,12 +21,14 @@ import { merlionDetails, fluxDetails, liftDetails } from "../utils/data";
           ['Mar 2022', 'Aug 2022'],
         ]"
         :details="liftDetails"
+        :location="'Brasília, Brazil'"
       ></JobCard>
       <JobCard
         :name="'Flux Bank'"
         :title="'Fullstack Developer'"
         :periods="[['Jul 2021', 'Oct 2022']]"
         :details="fluxDetails"
+        :location="'Brasília, Brazil'"
       ></JobCard>
     </div>
   </div>
