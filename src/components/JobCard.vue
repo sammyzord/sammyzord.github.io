@@ -18,7 +18,7 @@ const props = defineProps({
     <div class="flex justify-between">
       <p class="text-yellow-300 text-lg">{{ title }}</p>
       <div
-        class="flex flex-col text-yellow-300 border-2 border-yellow-300 py-0.5 px-2 translate-x-6 rotate-6 bg-gray-800"
+        class="flex flex-col text-yellow-300 border-2 border-yellow-300 py-0.5 px-2 translate-x-2 md:translate-x-3 lg:translate-x-6 rotate-6 bg-gray-800 min-w-64"
       >
         <p v-for="period in periods">{{ period.join(" ~ ") }}</p>
       </div>

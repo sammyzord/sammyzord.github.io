@@ -18,7 +18,7 @@ import ArrowDownIcon from "./components/icons/ArrowDownIcon.vue";
       </div>
     </div>
     <div class="min-h-screen flex flex-col justify-between items-center">
-      <div class="self-start pt-10 pl-4">
+      <div class="self-start pt-6 pb-10 pt-10 pl-4">
         <div
           class="bg-gray-800 border-2 border-yellow-300 text-yellow-300 py-1 px-4 -rotate-12"
         >
@@ -26,7 +26,7 @@ import ArrowDownIcon from "./components/icons/ArrowDownIcon.vue";
         </div>
       </div>
       <JobSection></JobSection>
-      <div></div>
+      <div class="py-10"></div>
     </div>
   </div>
 </template>

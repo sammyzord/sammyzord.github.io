@@ -5,8 +5,8 @@ import { merlionDetails, fluxDetails, liftDetails } from "../utils/data";
 </script>
 
 <template>
-  <div class="lg:px-10">
-    <div class="grid grid-cols-3 gap-8">
+  <div class="px-2 md:px-4 lg:px-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <JobCard
         :name="'Merlion IT'"
         :title="'Fullstack Developer'"
