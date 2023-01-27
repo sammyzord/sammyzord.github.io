@@ -13,15 +13,19 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col items-end">
-    <div class="flex gap-x-1 bg-yellow-300 text-gray-900 py-1 px-2 z-20 translate-y-6 translate-x-2 rounded-md">
-      <MapPinIcon></MapPinIcon>
+  <div
+    class="flex flex-col items-end hover:-translate-y-2 transition ease-in-out"
+  >
+    <div
+      class="flex gap-x-1 bg-yellow-300 text-gray-900 py-1 px-2 z-20 translate-y-6 translate-x-2 rounded-md"
+    >
+      <MapPinIcon :outline="true"></MapPinIcon>
       <span>
         {{ location }}
       </span>
     </div>
     <div
-      class="border-2 border-yellow-300 flex flex-col pl-4 pt-2 pb-6 gap-3 bg-gray-800 rounded-br-3xl hover:-translate-y-2 transition ease-in-out w-full"
+      class="border-2 border-yellow-300 flex flex-col pl-4 pt-2 pb-6 gap-3 bg-gray-800 rounded-br-3xl w-full"
     >
       <h2 class="text-yellow-300 text-3xl font-bold font-serif">{{ name }}</h2>
       <div class="flex justify-between items-center">
