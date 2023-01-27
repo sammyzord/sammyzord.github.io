@@ -12,7 +12,7 @@ import ArrowDownIcon from "./components/icons/ArrowDownIcon.vue";
       <div></div>
       <HeroSection></HeroSection>
       <div class="text-gray-900 mb-2">
-        <div class="bg-yellow-300 rounded-full">
+        <div class="bg-yellow-300 rounded-full animate-bounce">
           <ArrowDownIcon></ArrowDownIcon>
         </div>
       </div>

@@ -12,18 +12,25 @@ const props = defineProps({
 
 <template>
   <div
-    class="border-2 border-yellow-300 flex flex-col pl-4 py-2 gap-3 bg-gray-800 rounded-br-3xl hover:-translate-y-2 transition ease-in-out"
+    class="border-2 border-yellow-300 flex flex-col pl-4 pt-2 pb-6 gap-3 bg-gray-800 rounded-br-3xl hover:-translate-y-2 transition ease-in-out"
   >
     <h2 class="text-yellow-300 text-2xl font-semibold">{{ name }}</h2>
     <div class="flex justify-between">
       <p class="text-yellow-300 text-lg">{{ title }}</p>
       <div
-        class="flex flex-col text-yellow-300 border-2 border-yellow-300 py-0.5 px-2 translate-x-2 md:translate-x-3 lg:translate-x-6 rotate-6 bg-gray-800 min-w-64"
+        class="flex flex-col gap-y-2 text-yellow-300 border-2 border-yellow-300 py-0.5 px-2 translate-x-2 md:translate-x-3 lg:translate-x-6 rotate-6 bg-gray-800 min-w-64"
       >
-        <p v-for="period in periods">{{ period.join(" ~ ") }}</p>
+        <div
+          class="flex justify-center items-center gap-x-1 lg:gap-x-2 text-sm"
+          v-for="period in periods"
+        >
+          <span>{{ period[0] }}</span>
+          <span>→</span>
+          <span>{{ period[1] }}</span>
+        </div>
       </div>
     </div>
-    <div class="px-4 mt-2">
+    <div class="px-4 lg:mt-2">
       <ul class="list-disc flex flex-col space-y-2">
         <li v-for="detail in details" v-html="handleText(detail)"></li>
       </ul>
