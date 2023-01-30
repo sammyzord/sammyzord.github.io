@@ -16,7 +16,7 @@ import MapPinIcon from "./icons/MapPinIcon.vue";
         <span class="font-semibold">The Hague, Netherlands</span>
       </div>
       <div
-        class="bg-yellow-300 text-gray-900 border-2 border-gray-900 flex flex-col items-center space-y-4 p-4 shadow-lg hover:-translate-y-2 transition ease-in-out"
+        class="bg-yellow-300 text-gray-900 border-2 border-gray-900 flex flex-col items-center space-y-4 p-4 shadow-lg hover:translate-y-2 transition ease-in-out"
       >
         <img
           src="../assets/avatar2_cropped.png"

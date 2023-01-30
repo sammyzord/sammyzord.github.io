@@ -28,7 +28,7 @@ import ClockIcon from "./components/icons/ClockIcon.vue";
       </div>
       <JobSection></JobSection>
       <div
-        class="bg-yellow-300 px-2 py-1 mb-4 mr-3 self-end rounded-lg hover:scale-105 transition ease-in-out"
+        class="bg-yellow-300 px-2 py-1 mb-4 mr-3 self-end rounded-lg hover:scale-105 transition ease-in-out mt-2"
       >
         <h2
           class="flex items-center space-x-2 text-md font-semibold text-gray-900"
