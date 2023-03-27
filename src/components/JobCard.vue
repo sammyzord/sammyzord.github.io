@@ -3,7 +3,7 @@ import { PropType } from "vue";
 import { handleText } from "../utils/utils";
 import MapPinIcon from "../components/icons/MapPinIcon.vue";
 
-const props = defineProps({
+defineProps({
   name: { type: String, required: true },
   title: { type: String, required: true },
   periods: { type: Array as PropType<Array<Array<string>>>, required: true },
@@ -20,16 +20,18 @@ const props = defineProps({
       class="flex gap-x-1 bg-yellow-300 text-gray-900 py-1 px-2 z-20 translate-y-6 translate-x-2 rounded-md"
     >
       <MapPinIcon :outline="true"></MapPinIcon>
-      <span>
+      <span class="light-select">
         {{ location }}
       </span>
     </div>
     <div
       class="border-2 border-yellow-300 flex flex-col pl-4 pt-2 pb-6 gap-3 bg-gray-800 rounded-br-3xl w-full"
     >
-      <h2 class="text-yellow-300 text-3xl font-bold font-serif">{{ name }}</h2>
+      <h2 class="text-yellow-300 text-3xl font-bold font-serif dark-select">
+        {{ name }}
+      </h2>
       <div class="flex justify-between items-center">
-        <p class="text-yellow-300 text-xl font-medium font-serif">
+        <p class="text-yellow-300 text-xl font-medium font-serif dark-select">
           {{ title }}
         </p>
         <div
@@ -39,17 +41,32 @@ const props = defineProps({
             class="flex justify-center items-center gap-x-1 lg:gap-x-2 text-sm sm:text-base"
             v-for="period in periods"
           >
-            <span>{{ period[0] }}</span>
-            <span>→</span>
-            <span>{{ period[1] }}</span>
+            <span class="dark-select select:">{{
+              `${period[0]} → ${period[1]}`
+            }}</span>
           </div>
         </div>
       </div>
       <div class="px-4 lg:mt-2">
         <ul class="list-disc flex flex-col space-y-2">
-          <li v-for="detail in details" v-html="handleText(detail)"></li>
+          <li
+            class="detail-select"
+            v-for="detail in details"
+            v-html="handleText(detail)"
+          ></li>
         </ul>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.detail-select::-moz-selection {
+  /* Code for Firefox */
+  color: #fde047;
+}
+
+.detail-select::selection {
+  color: #fde047;
+}
+</style>

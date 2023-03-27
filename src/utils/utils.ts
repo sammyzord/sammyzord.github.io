@@ -3,6 +3,10 @@ export const handleText = (text: string) => {
     return new_text.replace(
         /\:(.*?)\:/g,
         (m) =>
-            `<span class="text-yellow-300">${m.slice(1, m.length - 1)}</span>`
+            `<span class=" underline underline-offset-4
+            decoration-2 decoration-dotted decoration-yellow-300
+            text-yellow-300 dark-select">
+            ${m.slice(1, m.length - 1)}
+            </span>`
     );
 }

@@ -26,4 +26,26 @@
     font-weight: 700;
     src: url("./assets/Crimson_Pro/CrimsonPro-Bold.ttf") format("truetype");
   }
+
+  .light-select::-moz-selection {
+    /* Code for Firefox */
+    color: #fde047;
+    background: #1f2937;
+  }
+
+  .light-select::selection {
+    color: #fde047;
+    background: #1f2937;
+  }
+
+  .dark-select::-moz-selection {
+    /* Code for Firefox */
+    color: #1f2937;
+    background: #fde047;
+  }
+
+  .dark-select::selection {
+    color: #1f2937;
+    background: #fde047;
+  }
 }

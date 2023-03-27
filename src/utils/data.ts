@@ -11,7 +11,7 @@ export const fluxDetails = [
     'Developed a SPA frontend in :Vue.js: and :TailwindCSS:',
     'Containerized the development environment for the applications',
     'Designed and set up a :CI: pipeline in :GitHub Actions:',
-    'Supervised and trained Jr. Developers'
+    ':Supervised: and trained Jr. Developers'
 ]
 
 export const liftDetails = [
@@ -23,7 +23,7 @@ export const liftDetails = [
     'Created a task queue using :Celery:',
     'Designed and set up a :CI: pipeline in :GitHub Actions:',
     'Deployed production containers using :Heroku:',
-    'Supervised and trained Jr. Developers'
+    ':Supervised: and trained Jr. Developers'
 ]
 
 export const zooDetails = [
