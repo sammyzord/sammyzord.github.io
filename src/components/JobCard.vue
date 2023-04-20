@@ -17,7 +17,7 @@ defineProps({
     class="flex flex-col items-end hover:-translate-y-2 transition ease-in-out"
   >
     <div
-      class="flex gap-x-1 bg-yellow-300 text-gray-900 py-1 px-2 z-20 translate-y-6 translate-x-2 rounded-md"
+      class="flex gap-x-1 bg-yellow-300 text-gray-900 py-1 pl-2 pr-4 z-20 translate-y-6 translate-x-3 rounded"
     >
       <MapPinIcon :outline="true"></MapPinIcon>
       <span class="light-select">
