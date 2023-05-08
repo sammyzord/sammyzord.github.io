@@ -10,6 +10,10 @@ defineProps({
   details: { type: Array as PropType<Array<string>>, required: true },
   location: { type: String, required: true },
 });
+
+const selectivelyAddPulse = (a: string): string => {
+  return a === "Ongoing" ? `<span class="animate-pulse">Ongoing</span>` : a;
+};
 </script>
 
 <template>
@@ -41,9 +45,10 @@ defineProps({
             class="flex justify-center items-center gap-x-1 lg:gap-x-2 text-sm sm:text-base"
             v-for="period in periods"
           >
-            <span class="dark-select select:">{{
-              `${period[0]} → ${period[1]}`
-            }}</span>
+            <span
+              class="dark-select select:"
+              v-html="`${period[0]} → ${selectivelyAddPulse(period[1])}`"
+            ></span>
           </div>
         </div>
       </div>
