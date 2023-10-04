@@ -12,7 +12,9 @@ defineProps({
 });
 
 const selectivelyAddPulse = (a: string): string => {
-  return a === "Ongoing" ? `<span class="animate-pulse">Ongoing</span>` : a;
+  return a === "Ongoing"
+    ? `<span class="animate-pulse dark-select">Ongoing</span>`
+    : a;
 };
 </script>
 

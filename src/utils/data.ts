@@ -28,5 +28,6 @@ export const liftDetails = [
 
 export const zooDetails = [
     'Maintained and evolved a frontend project made in :Next.js:',
+    'Developed a multitenant chat solution using embedded :Rocket.Chat:',
     'Assisted in the :DevOps: process of applications in :Azure:'
 ]
