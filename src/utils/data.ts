@@ -7,27 +7,22 @@ export const merlionDetails = [
 ];
 
 export const fluxDetails = [
-    'Maintained a backend project written in :Django:',
-    'Developed a SPA frontend in :Vue.js: and :TailwindCSS:',
-    'Containerized the development environment for the applications',
-    'Designed and set up a :CI: pipeline in :GitHub Actions:',
-    ':Supervised: and trained Jr. Developers'
+    'Maintained and evolved a backend monolith written in :Django:',
+    'Developed a :SPA: frontend in :Vue.js:',
+	'Worked together with designers to implement pixel perfect designs with :TailwindCSS:',
+	'Containerized all services using :Docker:',
+	'Set up :CI/CD: pipelines in :Github Actions:',
 ]
 
 export const liftDetails = [
-    'Developed RESTful APIs in :Express.js:',
-    'Assisted with the consumption of data from the Ethereum blockchain using :web3.js:',
-    'Designed Schemas in :MongoDB:',
-    'Developed a RESTful API using :Flask:',
-    'Developed and optimized production containers using :Docker Multistage:',
-    'Created a task queue using :Celery:',
-    'Designed and set up a :CI: pipeline in :GitHub Actions:',
-    'Deployed production containers using :Heroku:',
-    ':Supervised: and trained Jr. Developers'
+    'Developed RESTful microservices in :Flask"',
+	'Set up an asynchronous task queue using :Celery:',
+	'Designed database schemas in :MongoDB:',
+	'Containerized all microservices for production using :Docker:',
 ]
 
 export const zooDetails = [
     'Maintained and evolved a frontend project made in :Next.js:',
-    'Developed a multitenant chat solution using embedded :Rocket.Chat:',
-    'Assisted in the :DevOps: process of applications in :Azure:'
+    ':Worked with designers: to update the :UI: according to new branding',
+    'Assisted in the :DevOps: process of applications in :Azure:',
 ]
