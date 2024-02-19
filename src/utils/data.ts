@@ -15,7 +15,7 @@ export const fluxDetails = [
 ]
 
 export const liftDetails = [
-    'Developed RESTful microservices in :Flask"',
+    'Developed RESTful microservices in :Flask:',
     'Set up an asynchronous task queue using :Celery:',
     'Designed database schemas in :MongoDB:',
     'Containerized all microservices for production using :Docker:',
