@@ -22,8 +22,7 @@ import {
         :name="'LIFT Learning'"
         :title="'Backend Developer'"
         :periods="[
-          ['May 2021', 'Oct 2021'],
-          ['Mar 2022', 'Aug 2022'],
+          ['May 2021', 'Aug 2022'],
         ]"
         :details="liftDetails"
         :location="'Brasília, Brazil'"
