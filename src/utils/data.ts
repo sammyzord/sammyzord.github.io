@@ -9,16 +9,16 @@ export const merlionDetails = [
 export const fluxDetails = [
     'Maintained and evolved a backend monolith written in :Django:',
     'Developed a :SPA: frontend in :Vue.js:',
-	'Worked together with designers to implement pixel perfect designs with :TailwindCSS:',
-	'Containerized all services using :Docker:',
-	'Set up :CI/CD: pipelines in :Github Actions:',
+    ':Worked with designers: to implement :pixel perfect: designs with :TailwindCSS:',
+    'Containerized all services using :Docker:',
+    'Set up :CI/CD: pipelines in :Github Actions:',
 ]
 
 export const liftDetails = [
     'Developed RESTful microservices in :Flask"',
-	'Set up an asynchronous task queue using :Celery:',
-	'Designed database schemas in :MongoDB:',
-	'Containerized all microservices for production using :Docker:',
+    'Set up an asynchronous task queue using :Celery:',
+    'Designed database schemas in :MongoDB:',
+    'Containerized all microservices for production using :Docker:',
 ]
 
 export const zooDetails = [
