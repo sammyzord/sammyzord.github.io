@@ -1,28 +1,20 @@
-export const merlionDetails = [
-    "Worked on developing web applications and :RESTful APIs: using :Laravel PHP: framework",
-    "Worked on the development of Single-Page Applications using :Vue.js:",
-    "Contributed with with containerization of development environments using :Docker:",
-    "Assisted in creating pipelines in :Gitlab CI:",
-    "Assisted in the deployment process of PHP apps on :Google Cloud Platform:",
+export const intro = [
+    "Software engineer with :6 years: of experience, working mostly in :Python:, :Scala: and :Java:.",
+    "B.S. in Software Engineering from the :University of Brasília (UnB):, currently pursuing an :M.S. in Computer Science: at :Georgia Tech:.",
 ];
 
-export const fluxDetails = [
-    'Maintained and evolved a backend monolith written in :Django:',
-    'Developed a :SPA: frontend in :Vue.js:',
-    ':Worked with designers: to implement :pixel perfect: designs with :TailwindCSS:',
-    'Containerized all services using :Docker:',
-    'Set up :CI/CD: pipelines in :Github Actions:',
-]
+export const experience = [
+    "Web applications and :RESTful APIs: in :Django:, :Flask: and :Laravel:",
+    "Frontends in :Vue.js: and :Next.js:, built with designers using :TailwindCSS:",
+    ":Spark: pipelines in :Scala: and :Python: on :Delta tables: in :Azure:, from development through maintenance and optimization",
+    ":MongoDB: schema design and async task queues with :Celery:",
+    ":Docker: and :CI/CD: with :Github Actions: and :Gitlab CI:",
+    "Deployments on :Azure: and :Google Cloud Platform:",
+];
 
-export const liftDetails = [
-    'Developed RESTful microservices in :Flask:',
-    'Set up an asynchronous task queue using :Celery:',
-    'Designed database schemas in :MongoDB:',
-    'Containerized all microservices for production using :Docker:',
-]
-
-export const zooDetails = [
-    'Maintained and evolved a frontend project made in :Next.js:',
-    ':Worked with designers: to update the :UI: according to new branding',
-    'Assisted in the :DevOps: process of applications in :Azure:',
-]
+export const interests = [
+    ":UI/UX:",
+    ":DevOps:",
+    ":AI/ML:",
+    ":Open source:",
+];
