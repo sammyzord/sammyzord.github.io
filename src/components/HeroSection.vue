@@ -15,7 +15,7 @@ import AcademicIcon from "./icons/AcademicIcon.vue";
       >
         <MapPinIcon></MapPinIcon>
         <span class="font-semibold light-select">
-          &nbsp; The Hague, Netherlands &nbsp;
+          &nbsp; Netherlands &nbsp;
         </span>
       </div>
       <div
